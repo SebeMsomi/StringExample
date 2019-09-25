@@ -1,12 +1,17 @@
+import java.util.ArrayList;
+import java.util.Collections;
+
 public class StringExample {
+
+    private static String str = "Sample String";
+
 
     public static void main(String[] args) {
 
-        String str = "Sample String";
-
         displayString(str);
         displayBackwardString(str);
-        searchString(str,'s');
+        searchString(str,'S');
+
 
     }//end main
 
@@ -17,7 +22,7 @@ public class StringExample {
         //iterates through str and prints each character on a new line
         for (int i = 0; i <str.length(); i++){
 
-            System.out.println(str.charAt(i));
+            System.out.print(str.charAt(i));
 
         }//end of for loop
 
